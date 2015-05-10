@@ -89,8 +89,8 @@ Smooth Scrolling when rows added/removed is achieved by placing 2 placeholder di
   Before/After the super-scroller's DOM Element.
   
 
-  When adding/removing rows, each row element's height (found from 'rowClassName') is applied to surrounding 
+  When adding/removing rows, each row element's height (found from 'rowClassName') is applied 
   
-  divs to create a padding effect that allows for unlimited scrolling without changing the user's natural 
+  to surrounding divs to create a padding effect that allows for unlimited scrolling without 
   
-  scrolling experience.
+  changing the user's natural scrolling experience.
