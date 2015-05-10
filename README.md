@@ -45,7 +45,7 @@ The Bi-Directional Scroll directive takes in as an attr the following parameters
 
     Scroll Distance allows one to configure the threshold for the trigger functions
     
-      *is the number of windows required before triggering the threshold
+      *is the number of window heights required before triggering the threshold
     
         Usage: A value of 1 would trigger a bottom-scroll event when the window 
     
@@ -53,12 +53,12 @@ The Bi-Directional Scroll directive takes in as an attr the following parameters
                
 Example Usage: 
 
-<div id="tester" ng-super-scroller="4" bottom-trigger="test()" top-trigger="test()" scroll-distance="5"></div>
+<div ng-super-scroller bottom-trigger="test()" top-trigger="test()" scroll-distance="5"></div>
 
 
 Adding/Removing rows is configured from the 'Contact' Service.
 
-Configuration options:
+Contact Service Configuration options:
 
   1. Total Size:
 
@@ -86,9 +86,11 @@ Smooth Scrolling when rows added/removed is achieved by placing 2 placeholder di
 
   - ng-super-scroller-after
 
-  Around the element holding the row
+  Before/After the super-scroller's DOM Element.
   
 
-  When adding/removing, each element's height (found from 'rowClassName') is applied to surrounding divs to create 
- 
-  a padding effect that allows for unlimited scrolling without changing the user's natural scrolling experience
+  When adding/removing rows, each row element's height (found from 'rowClassName') is applied to surrounding divs to 
+  
+  create a padding effect that allows for unlimited scrolling without changing the user's natural scrolling 
+
+  experience
