@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+    	<title>Infinite Scroll</title>
+
+    	<meta name="viewport" content="width=device-width">
+
+    	<!--Load Styles -->
+		<link rel="stylesheet" href="style/css/bootstrap.min.css">
+		<link rel="stylesheet" href="style/css/main.css">
+	</head>
+	<!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+ 	<body>
+    <div class="container" ng-app="app">
+    	
+    	<div ui-view></div>
+
+        <div class="footer">
+            <p><span class="glyphicon glyphicon-heart"></span> by Alex Calfo</p>
+        </div>
+    </div>
+
+	<!--Load Components -->
+    <script type="text/javascript" src="scripts/components/jquery/dist/jquery.min.js"></script>
+	<script src="scripts/components/angular/angular.min.js"></script>
+    <script src="scripts/components/ui-router/release/angular-ui-router.min.js"></script>
+
+	<!--Load Angular Files-->
+	<script type="text/javascript" src="scripts/app.js"></script>
+	<script type="text/javascript" src="scripts/controllers/mainController.js"></script>
+    <script type="text/javascript" src="scripts/directives/error.js"></script>
+    <script type="text/javascript" src="scripts/directives/name.js"></script>
+    <script type="text/javascript" src="scripts/directives/contactMeta.js"></script>
+    <script type="text/javascript" src="scripts/directives/ngSuperScroller.js"></script>
+    <script type="text/javascript" src="scripts/services/randomGenerator.js"></script>
+    <script type="text/javascript" src="scripts/services/contact.js"></script>
+	</body>
+</html>

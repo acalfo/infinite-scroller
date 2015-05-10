@@ -1,0 +1,35 @@
+<h1 class="contact-header">
+  User Directory for "Sum Cool Place"
+</h1>
+
+<error></error>
+
+<div ng-super-scroller 
+      bottom-trigger="forward()"
+      top-trigger="back()"
+      scroll-distance="5">
+
+  <div ng-repeat="contact in contacts.currentSet" 
+        class="contact-row row">
+
+    <div class="col-md-4">
+      <img ng-src="{{contact.user.picture.thumbnail}}" 
+            class="row-img">
+      </img>
+    </div>
+   
+    <div class="col-md-8"> 
+
+      <name first="{{contact.user.name.first}}" 
+            last="{{contact.user.name.last}}"></name>
+
+      <contact-meta text="Username" value="{{contact.user.username}}"></contact-meta>
+
+      <contact-meta text="Email" value="{{contact.user.email}}"></contact-meta>
+
+      <contact-meta text="Phone" value="{{contact.user.phone}}"></contact-meta>
+
+    </div>
+
+  </div>
+</div>
