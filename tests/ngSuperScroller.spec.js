@@ -15,7 +15,7 @@ describe("ngSuperScroller", function(){
           $window = angular.element($window);
 
           //Create element.
-          element = angular.element('<div style="overflow:auto; height:20000px; width:20000px;"><div id="tester" ng-super-scroller="4" bottom-trigger="test()" top-trigger="test()" scroll-distance="5"></div></div>');
+          element = angular.element('<div style="overflow:auto; height:20000px; width:20000px;"><div id="tester" ng-super-scroller bottom-trigger="test()" top-trigger="test()" scroll-distance="5"></div></div>');
           $compile(element)($rootScope);
 
           //Test Trigger function to flip flag
